@@ -47,9 +47,6 @@ if st.button("Generate Notes"):
             st.subheader("Study Notes")
             st.markdown(response.text)
 
-        except Exception:
-            st.error(
-                "Something went wrong. Check app secrets "
-                "and the available Gemini model."
-            )
+        except Exception as e:
+    st.error(f"Error details: {e}")
           
